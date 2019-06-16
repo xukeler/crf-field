@@ -1,0 +1,437 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+// 去掉input 默认填充背景色
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px #fff!important;
+}
+
+
+
+@media screen and (max-width: 1366px) {
+    .login-inner{
+        width:85%;
+        height:90%;
+    }
+    .login-swiper{
+       padding-top:200px; 
+    }
+    .login-form h2{
+        margin-top:100px;
+    }
+}
+.module-add-modal .add-inner .inner-left,.control-inner-block .main{
+    .check-group{
+       height: calc(100% - 53px);     
+       overflow: auto;    
+    }
+    .ant-radio-wrapper{
+        display:block;
+        width:100%;
+        font-size: 14px;
+        color: #7e828a;
+        line-height: 40px; 
+        margin-right:0;
+        white-space:pre-wrap;
+    }
+     .check-group .ant-radio-wrapper + .ant-radio-wrapper{
+        margin-top:20px;
+    }
+ 
+    .ant-radio-inner{
+        border-radius: 2px;
+        &:after{
+            transform: rotate(45deg) scale(0);
+            position: absolute;
+            left: 4.57142857px;
+            top: 1.14285714px;
+            display: table;
+            width: 5.71428571px;
+            height: 9.14285714px;
+            border: 2px solid #fff;
+            border-top: 0;
+            border-left: 0;
+            content: ' ';
+            transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+            opacity: 0;
+            border-radius:0;
+        }
+
+
+    }
+    .ant-radio-checked .ant-radio-inner{
+        background-color: #1890ff;
+        &:after{
+            transform: rotate(45deg) scale(1);
+            transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+            opacity: 1;
+        }
+     }
+     span.ant-radio + *{
+         padding-left:11px;
+     }
+    
+}
+.control-inner-block .main{
+    .ant-radio-wrapper{
+        width:auto;
+        display:inline-block;
+        line-height: 0;
+        padding-right:10px;
+    }
+    .check-group{
+        height: calc(100% - 53px);     
+        overflow: hidden;    
+     }
+    .check-group .ant-radio-wrapper + .ant-radio-wrapper{
+        margin-top:0px;
+    }
+}
+.module-body .module-left .ant-btn{
+    padding:7px 24px;
+}
+.field-config-body .btn-group .ant-btn{
+    padding:7px 24px;
+    
+}
+.module-info-body .search .ant-btn{
+    padding:7px 24px;
+
+}
+.visit-main .btn-group .ant-btn{
+    padding:7px 24px;
+}
+
+// .between-block{
+//     display: flex;
+//     justify-content: center;
+  
+// }
+
+
+.field-control-inner{
+    padding-top:0;
+    overflow-y: inherit;
+    .btn-group-block{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-group {
+        width: 855px;
+        // margin: 0 auto;
+        padding:20px 0;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        .select-sty{
+            margin-right:10px;
+          }
+        .ant-btn {
+          padding: 4px 25px;
+          height: auto;
+          font-size: 14px;
+          color: #ffffff;
+          line-height: 20px;
+          border-radius: 4px;
+  
+          +.ant-btn {
+            margin-left: 10px;
+          }
+  
+          &.btn-sty1 {
+            background: #27c6df;
+            margin-right:10px;
+          }
+  
+          &.btn-sty2 {
+            background: #548ff3;
+          }
+        
+        }
+      }
+    .control-inner-block{
+    //    width:855px;
+       display:flex;
+       justify-content: center;
+       height: calc(100% - 82px); 
+       margin:0 auto;
+       overflow: auto;
+    }
+    .con-block{
+       width:855px;
+    }
+    .con-block01{
+        margin-right:20px;
+    }
+
+}
+.field-control-inner .main .item .control .dateControl{
+    flex-wrap: wrap;
+    .ant-input{
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+}
+// 版本号
+.text{
+    font-size: 16px;
+}
+.version{
+    color:#3D434F;
+    font-weight:bold;
+    font-family:PingFang-SC-Bold;
+}
+
+.field-control-inner{
+    overflow: hidden;
+}
+.field-control-inner .main .item{
+    .label{
+        width:45%;
+    }
+    .control{
+        width:55%;
+    }
+} 
+
+.module-body{
+    .module-items2{
+      height: calc(100% - 128px);
+    }
+}
+
+.form-block{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    .form-label{
+        width:30%;
+        color:#333;
+    }
+    &+.form-block{
+        margin-top:10px;
+    }
+    .form-input{
+        width:70%;
+    }
+}
+
+.field-modal.visit-modal2{
+    height:300px;
+}
+.module-right{
+    .btn-group{
+        .btn-sty1{
+                margin-left:20px;
+        }
+    }
+}
+
+
+
+.icon-delete {
+    color: red;
+  }
+
+.scroll-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.bscroll-indicator{
+    // height:27px!important;
+    width:6px!important;
+    border-radius:10px!important;
+    background:rgba(0,0,0,0.3)!important;
+}
+.bscroll-vertical-scrollbar{
+    z-index:688!important;
+}
+// 展开收起
+.visit-block{
+    .btn-group{
+        display:flex;
+        justify-content: space-between;
+    }
+    .putOn-block{
+        font-size: 14px;
+        color:#7A859B;
+        .fold{
+            cursor: pointer;
+            
+            &:first-child{
+                padding-right:30px;
+            }
+            .iconfont{
+                font-size: 14px;
+            }
+        }
+        .active{
+            color:#548FF3;
+        }
+    }
+}
+.same-control-block{
+    .form-block{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom:20px;
+        .form-label{
+            width:auto;
+            padding-right:20px;
+        }
+        .ant-select{
+           width:36%;
+        }
+    }
+}
+.field-modal{
+    .opeBtnVisit{
+       padding-left:16px;
+    }
+}
+.module-right{
+    .nameGroup{
+        display:flex;
+        justify-content: flex-start;
+        .title{
+            padding-right:30px;
+        }
+    }
+}
+.module-btn-block{
+    .btn-sty1{
+        margin-right:20px;
+    }
+}
+.check-radio-block{
+    padding-left:20px;
+    line-height: 16px;
+}
+
+.field-table{
+   .required-input-block{
+       display:flex;
+       justify-content: flex-start;
+       align-items: center;
+       .ant-input{
+           margin-left:8px;
+       }
+   }
+}
+.module-add-modal .add-inner{
+    height: calc(100% - 129px); 
+}
+.module-add-modal{
+    .title-top .control-item .label{
+        color:#7E828A;
+    }
+    .disease-type-block{
+        padding-top:20px;
+         display:flex;
+         justify-content: space-between;
+         align-items: center;
+         .left-block{
+             width:11%;
+             font-size:16px;
+             color:#7E828A;
+         }
+         .right-block{
+             width:89%;
+         }
+      }
+      .search{
+          padding-top:10px;
+      }
+      .inner-left {
+          .search{
+              margin:0 8px 0 20px;
+          }
+      }
+      .check-item {
+        font-size:13px;
+        font-family:Helvetica;
+        color:rgba(126,130,138,1);
+        line-height:16px;
+        cursor: pointer;
+
+        &:not(:first-child){
+            padding-top:22px;
+        }
+      } 
+      .check-active{
+        color:#548FF3;
+      }
+      .check-selected{
+        color:#FFBA49;
+    }
+}
+
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none){
+	/*兼容IE11*/
+	.module-add-modal .check-item {
+        font-size:12px;
+        line-height: 20px;
+    }
+}
+
+.module-add-modal .add-inner .inner-right {
+    .search{
+        padding-bottom:4px;
+    }
+    .module-table{padding-top:65px;
+        padding-top:10px;
+    }
+    .nothing-body {
+    top:190px;
+    }
+}
+.nothing-body{
+    .icon-kong-color{
+        color:#D6D6D6
+    }
+}
+.ant-table {
+    .indent-level-1{
+      padding-left:0px!important;
+    }
+.ant-table-row-level-1{
+    td{
+        &:first-child{
+            text-align:right;
+            padding-right:10px!important;
+        }
+    }
+    .ant-table-row-spaced{
+        width:0px!important;
+        margin-right:0!important;
+    }
+}
+}
+.crf-body .crf-config-item .inner-top .title{
+    font-size: 16px;
+    line-height:28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+
+
+
+
+
+
+
+
